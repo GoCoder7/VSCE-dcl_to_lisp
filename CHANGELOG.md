@@ -11,3 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.0] - 2025-03-10
 
 - published
+
+## [1.0.1] - 2025-03-10
+
+- fix : change the dialog name with the basename of the temporary file.

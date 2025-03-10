@@ -2,7 +2,7 @@
   "name": "dcl-to-autolisp",
   "displayName": "DCL to Autolisp",
   "description": "Converts DCL to Autolisp function",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.91.0"
   },

@@ -11,7 +11,7 @@ The lisp function makes temporary DCL file on your system's temporary folder and
 so you can use this as a parameter for `load_dialog` function like this
 
 ```lisp
-; created temporary lisp file by this extension
+; created lisp function by this extension
 (defun createDCL ( / )
   ;...
 )

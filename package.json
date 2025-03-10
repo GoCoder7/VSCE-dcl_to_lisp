@@ -1,0 +1,52 @@
+{
+  "name": "dcl-to-autolisp",
+  "displayName": "DCL to Autolisp",
+  "description": "Converts DCL to Autolisp function",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dclToAutolisp.autolispdcl",
+        "title": "DCL to Autolisp"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "dclToAutolisp.autolispdcl",
+          "when": "editorLangId == autolispdcl"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.91.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  },
+  "icon": "img/dcl_to_autolisp_128.png",
+  "publisher": "gocoder",
+  "repository": "https://github.com/GoCoder7/VSCE-dcl_to_lisp"
+}
